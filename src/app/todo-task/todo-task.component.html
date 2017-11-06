@@ -1,0 +1,5 @@
+<div style="border:1px solid black;padding:10px;margin-bottom:5px" [ngStyle]="task.state=='pending'?{'background-color':'red'}:{'background-color':'green'}">
+    <p>{{task.text}} </p><button (click)="delete()">Del</button  >
+      <button (click)="changeState('complete')">Mark Complete</button>
+
+</div>

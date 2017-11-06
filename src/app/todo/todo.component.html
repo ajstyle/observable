@@ -1,0 +1,4 @@
+<div>
+
+    <app-todo-task *ngFor="let t of tasks" [task]="t" (del)="removeTask($event)" (stateChanged)="updateTask($event)"> </app-todo-task>
+</div>
