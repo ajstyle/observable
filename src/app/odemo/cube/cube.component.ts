@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {OdemoService } from '../odemo.service' ; 
+import {OdemoService } from '../odemo.service' ;
 @Component({
   selector: 'app-cube',
   templateUrl: './cube.component.html',
@@ -7,7 +7,7 @@ import {OdemoService } from '../odemo.service' ;
 })
 export class CubeComponent implements OnInit {
 
-  result: number ; 
+  result: number ;
   constructor(private odemoservice: OdemoService  ) {
     this.odemoservice.getNumber().subscribe((n: number) => {
             console.log(n);
@@ -15,7 +15,7 @@ export class CubeComponent implements OnInit {
 
     });
   }
-  
+
   ngOnInit() {
   }
 

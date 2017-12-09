@@ -6,20 +6,15 @@ export class OdemoService {
 
   private myNumber: BehaviorSubject<number>;
 
-  constructor() { 
-
+  constructor() {
     this.myNumber = new BehaviorSubject(0);
-
   }
 
   setNumber(num: number){
-      
     this.myNumber.next(num);
-
   }
 
   getNumber(){
-
     return this.myNumber;
   }
 
